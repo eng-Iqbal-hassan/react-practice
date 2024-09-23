@@ -1,5 +1,9 @@
+import BindEvent from "@common/components/BindEvent";
 import FunctionClick from "@common/components/FunctionClick";
 import Message from "@common/components/Message";
+import NameList from "@common/components/NameList";
+import ParentComponent from "@common/components/ParentComponent";
+import UserGreet from "@common/components/UserGreet";
 // import Spline from "@splinetool/react-spline";
 
 export function Home() {
@@ -10,6 +14,10 @@ export function Home() {
       </div> */}
       <Message name="Iqbal" secondName="Hassan" />
       <FunctionClick />
+      <BindEvent />
+      <ParentComponent />
+      <UserGreet />
+      <NameList />
     </>
   );
 }
