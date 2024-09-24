@@ -10,6 +10,7 @@ import "../../../../src/AppStyles.css";
 import Styles from "../../../../src/AppStyles.module.css";
 import Form from "@common/components/Form";
 import FragmentDemo from "@common/components/FragmentDemo";
+import ParentComp from "@common/components/ParentComp";
 // import Spline from "@splinetool/react-spline";
 
 export function Home() {
@@ -30,6 +31,7 @@ export function Home() {
       <Inline />
       <Form />
       <FragmentDemo />
+      {/* <ParentComp /> */}
     </>
   );
 }
