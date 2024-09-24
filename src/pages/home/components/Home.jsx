@@ -9,6 +9,7 @@ import UserGreet from "@common/components/UserGreet";
 import "../../../../src/AppStyles.css";
 import Styles from "../../../../src/AppStyles.module.css";
 import Form from "@common/components/Form";
+import FragmentDemo from "@common/components/FragmentDemo";
 // import Spline from "@splinetool/react-spline";
 
 export function Home() {
@@ -28,6 +29,7 @@ export function Home() {
       <Stylesheet primary={true} />
       <Inline />
       <Form />
+      <FragmentDemo />
     </>
   );
 }
