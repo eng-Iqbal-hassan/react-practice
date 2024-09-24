@@ -8,6 +8,7 @@ import Stylesheet from "@common/components/Stylesheet";
 import UserGreet from "@common/components/UserGreet";
 import "../../../../src/AppStyles.css";
 import Styles from "../../../../src/AppStyles.module.css";
+import Form from "@common/components/Form";
 // import Spline from "@splinetool/react-spline";
 
 export function Home() {
@@ -26,6 +27,7 @@ export function Home() {
       <NameList />
       <Stylesheet primary={true} />
       <Inline />
+      <Form />
     </>
   );
 }
