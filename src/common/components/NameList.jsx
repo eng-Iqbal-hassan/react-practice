@@ -48,8 +48,11 @@ export default function NameList() {
       <p>{names[2]}</p> */}
       {/* the above approach is not the right solution , the proper solution is the using of map method*/}
       {/* map method is the javascript code which needs to be executed  in JSX thats why we do it inside curly braces  */}
-      {names.map((name) => (
-        <p>{name}</p>
+      {names.map((name, index) => (
+        <p key={index}>
+          {index}
+          {name}
+        </p>
       ))}
       {/* {persons.map((person) => (
         <p>
@@ -60,8 +63,23 @@ export default function NameList() {
       component and data is passed down that component as mentioned in the
       example below */}
       {persons.map((person) => (
-        <ChildList person={person} />
+        <ChildList key={person.id} person={person} />
       ))}
+      {/* there is the warning or you can say error which is that each child in the array should have unique key.*/}
+      {/* this error is removed by adding a unique key prop in the parent HTML of the map */}
+      {/* key is the unique prop which you are hundred percent sure that this value is  not repeating in the list  */}
+      {/* A 'key'  is the special string which we do need to add when creating the list of element */}
+      {/* key gives the element a stable identity */}
+      {/* key helps react identifying which item in the list has changed or added or removed and place a crucial role in handling UI updates efficiently.    */}
+      {/* when there is list of items in the array we use the index as key */}
+      {/* index starts form zero and it increases with each iteration */}
+      {/* index is passed as second parameter in the arrow function and is used as value for key prop */}
+      {/* important points */}
+      {/* when to use index as key */}
+      {/* the items in the list do not have any unique value */}
+      {/* the list is static and its value will never be changed */}
+      {/* the list will neither be ordered nor be filtered */}
+      {/* otherwise it will create dizastour issues which */}
     </div>
   );
 }
