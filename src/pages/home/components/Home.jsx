@@ -15,6 +15,8 @@ import RefsDemo from "@common/components/RefsDemo";
 import FocusInput from "@common/components/FocusInput";
 import FRParentInput from "@common/components/FRParentInput";
 import PortalDemo from "@common/components/PortalDemo";
+import Hero from "@common/components/Hero";
+import ErrorBoundary from "@common/components/ErrorBoundary";
 // import Spline from "@splinetool/react-spline";
 
 export function Home() {
@@ -40,6 +42,11 @@ export function Home() {
       <Form />
       <FragmentDemo />
       {/* <ParentComp /> */}
+      <Hero heroName="batman" />
+      <Hero heroName="superman" />
+      <ErrorBoundary>
+        <Hero heroName="joker" />
+      </ErrorBoundary>
     </>
   );
 }
