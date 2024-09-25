@@ -14,6 +14,7 @@ import ParentComp from "@common/components/ParentComp";
 import RefsDemo from "@common/components/RefsDemo";
 import FocusInput from "@common/components/FocusInput";
 import FRParentInput from "@common/components/FRParentInput";
+import PortalDemo from "@common/components/PortalDemo";
 // import Spline from "@splinetool/react-spline";
 
 export function Home() {
@@ -22,6 +23,7 @@ export function Home() {
       {/* <div className="w-[24.375rem] h-40">
         <Spline scene="https://prod.spline.design/bJMWsSW3BjYwVySg/scene.splinecode" />
       </div> */}
+      <PortalDemo />
       <h1 className="error">error</h1>
       <h1 className={Styles.success}>success</h1>
       <Message name="Iqbal" secondName="Hassan" />
