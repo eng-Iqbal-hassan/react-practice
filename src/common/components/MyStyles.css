@@ -5,3 +5,9 @@
 .font-xl {
   font-size: 72px;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

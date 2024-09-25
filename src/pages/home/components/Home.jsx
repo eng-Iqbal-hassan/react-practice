@@ -8,6 +8,12 @@ import Stylesheet from "@common/components/Stylesheet";
 import UserGreet from "@common/components/UserGreet";
 import "../../../../src/AppStyles.css";
 import Styles from "../../../../src/AppStyles.module.css";
+import Form from "@common/components/Form";
+import FragmentDemo from "@common/components/FragmentDemo";
+import ParentComp from "@common/components/ParentComp";
+import RefsDemo from "@common/components/RefsDemo";
+import FocusInput from "@common/components/FocusInput";
+import FRParentInput from "@common/components/FRParentInput";
 // import Spline from "@splinetool/react-spline";
 
 export function Home() {
@@ -21,11 +27,17 @@ export function Home() {
       <Message name="Iqbal" secondName="Hassan" />
       <FunctionClick />
       <BindEvent />
+      {/* <RefsDemo /> */}
+      {/* <FocusInput /> */}
+      <FRParentInput />
       <ParentComponent />
       <UserGreet />
       <NameList />
       <Stylesheet primary={true} />
       <Inline />
+      <Form />
+      <FragmentDemo />
+      {/* <ParentComp /> */}
     </>
   );
 }
