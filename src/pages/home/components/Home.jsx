@@ -19,6 +19,10 @@ import Hero from "@common/components/Hero";
 import ErrorBoundary from "@common/components/ErrorBoundary";
 import ClickCounter from "@common/components/ClickCounter";
 import HoverCounter from "@common/components/HoverCounter";
+import ClickCounterTwo from "@common/components/ClickCounterTwo";
+import HoverCounterTwo from "@common/components/hoverCounterTwo";
+import User from "@common/components/User";
+import Counter from "@common/components/Counter";
 // import Spline from "@splinetool/react-spline";
 
 export function Home() {
@@ -30,6 +34,37 @@ export function Home() {
       <PortalDemo />
       <ClickCounter name="iqbal" />
       <HoverCounter />
+      {/* <ClickCounterTwo />
+      <HoverCounterTwo /> */}
+      <Counter
+        render={(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      />
+      <Counter
+        render={(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      />
+      {/* <Counter>
+        {(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      </Counter>
+      <Counter>
+        {(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      </Counter> */}
+      {/* <User name="Iqbal" /> */}
+      {/* <User name={() => "Iqbal"} /> */}
+      {/* <User name={(isLoggedIn) => (isLoggedIn ? "Iqbal" : "Guest")} /> */}
+      {/* <User render={(isLoggedIn) => (isLoggedIn ? "Iqbal" : "Guest")} /> */}
+      {/* value of a prop can be a function to control what is actually render in a
+      component */}
+      {/* this is a base of render prop  */}
+      {/* render prop is a technique to share the common function between the
+      components using prop whose value is a function */}
       <h1 className="error">error</h1>
       <h1 className={Styles.success}>success</h1>
       <Message name="Iqbal" secondName="Hassan" />
