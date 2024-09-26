@@ -23,6 +23,9 @@ import ClickCounterTwo from "@common/components/ClickCounterTwo";
 import HoverCounterTwo from "@common/components/hoverCounterTwo";
 import User from "@common/components/User";
 import Counter from "@common/components/Counter";
+import ComponentC from "@common/components/ComponentC";
+import { UserProvider } from "@common/components/UserContext";
+
 // import Spline from "@splinetool/react-spline";
 
 export function Home() {
@@ -86,6 +89,9 @@ export function Home() {
       <ErrorBoundary>
         <Hero heroName="joker" />
       </ErrorBoundary>
+      <UserProvider value="Iqbal">
+        <ComponentC />
+      </UserProvider>
     </>
   );
 }
