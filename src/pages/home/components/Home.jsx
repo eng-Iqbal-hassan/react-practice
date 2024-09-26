@@ -17,6 +17,8 @@ import FRParentInput from "@common/components/FRParentInput";
 import PortalDemo from "@common/components/PortalDemo";
 import Hero from "@common/components/Hero";
 import ErrorBoundary from "@common/components/ErrorBoundary";
+import ClickCounter from "@common/components/ClickCounter";
+import HoverCounter from "@common/components/HoverCounter";
 // import Spline from "@splinetool/react-spline";
 
 export function Home() {
@@ -26,6 +28,8 @@ export function Home() {
         <Spline scene="https://prod.spline.design/bJMWsSW3BjYwVySg/scene.splinecode" />
       </div> */}
       <PortalDemo />
+      <ClickCounter name="iqbal" />
+      <HoverCounter />
       <h1 className="error">error</h1>
       <h1 className={Styles.success}>success</h1>
       <Message name="Iqbal" secondName="Hassan" />
