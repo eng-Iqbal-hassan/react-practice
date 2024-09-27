@@ -1,6 +1,7 @@
 import React from "react";
 import {
   DataFetching,
+  DataFetchingSinglePost,
   IntervalCounter,
   UseEffectCleanups,
   UseEffectRenders,
@@ -15,7 +16,8 @@ export function UseEffectConcept() {
       {/* run this clean up function with other components commented out  */}
       {/* <UseEffectCleanups /> */}
       {/* <IntervalCounter /> */}
-      <DataFetching />
+      {/* <DataFetching /> */}
+      <DataFetchingSinglePost />
     </div>
   );
 }

@@ -4,3 +4,4 @@ export { UseEffectRunsOnce } from "./components/UseEffectRunsOnce";
 export { UseEffectCleanups } from "./components/UseEffectCleanups";
 export { IntervalCounter } from "./components/IntervalCounter";
 export { DataFetching } from "./components/DataFetching";
+export { DataFetchingSinglePost } from "./components/DataFetchingSinglePost";
