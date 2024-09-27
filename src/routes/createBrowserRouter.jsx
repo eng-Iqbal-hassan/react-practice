@@ -8,7 +8,7 @@ import { Unauthorized } from "@pages/unauthorized";
 import { ROUTES, PrivateRoute } from "@routes";
 import { GetRequest } from "@pages/getRequest";
 import { PostRequest } from "@pages/postRequest";
-import { UseStateConcept } from "@pages/useState/components/UseStateConcept";
+import { UseStateConcept } from "@pages/useState";
 
 // eslint-disable-next-line no-unused-vars
 const createPrivateRoute = (Component) => {

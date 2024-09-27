@@ -1,1 +1,2 @@
-export { useStateConcept } from "./components/UseStateConcept";
+export { UseStateConcept } from "./components/UseStateConcept";
+export { PrevStateHooks } from "./components/PrevStateHooks";
