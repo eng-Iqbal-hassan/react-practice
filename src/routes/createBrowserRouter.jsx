@@ -9,6 +9,7 @@ import { ROUTES, PrivateRoute } from "@routes";
 import { GetRequest } from "@pages/getRequest";
 import { PostRequest } from "@pages/postRequest";
 import { UseStateConcept } from "@pages/useState";
+import { UseEffectConcept } from "@pages/useEffect";
 
 // eslint-disable-next-line no-unused-vars
 const createPrivateRoute = (Component) => {
@@ -28,6 +29,7 @@ export const router = createBrowserRouter(
       <Route path={ROUTES.GET_REQUEST} element={<GetRequest />} />
       <Route path={ROUTES.POST_REQUEST} element={<PostRequest />} />
       <Route path={ROUTES.USE_STATE} element={<UseStateConcept />} />
+      <Route path={ROUTES.USE_EFFECT} element={<UseEffectConcept />} />
     </>
   ),
   { basename: "/app" }
