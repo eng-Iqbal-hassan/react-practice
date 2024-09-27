@@ -13,6 +13,7 @@ export function UseEffectRunsOnce() {
     console.log("useEffect calls");
     window.addEventListener("mousemove", mousePosition);
     // when we need clean up the code we return the clean up function inside the implemented function and this implemented function is inside useState.
+    // clean up codes might cancelling the subscription, removing timers or even the eventListener
     return () => {
       console.log("component unmount code");
       window.removeEventListener("mousemove", mousePosition);

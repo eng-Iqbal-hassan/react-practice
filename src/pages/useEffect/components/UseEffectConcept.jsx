@@ -1,13 +1,19 @@
 import React from "react";
-import { UseEffectCleanups, UseEffectRenders, UseEffectRunsOnce } from "..";
+import {
+  IntervalCounter,
+  UseEffectCleanups,
+  UseEffectRenders,
+  UseEffectRunsOnce,
+} from "..";
 
 export function UseEffectConcept() {
   return (
     <div>
-      <UseEffectRenders />
-      <UseEffectRunsOnce />
+      {/* <UseEffectRenders />
+      <UseEffectRunsOnce /> */}
       {/* run this clean up function with other components commented out  */}
-      <UseEffectCleanups />
+      {/* <UseEffectCleanups /> */}
+      <IntervalCounter />
     </div>
   );
 }
