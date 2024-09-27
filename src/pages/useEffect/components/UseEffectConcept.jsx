@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  DataFetching,
   IntervalCounter,
   UseEffectCleanups,
   UseEffectRenders,
@@ -13,7 +14,8 @@ export function UseEffectConcept() {
       <UseEffectRunsOnce /> */}
       {/* run this clean up function with other components commented out  */}
       {/* <UseEffectCleanups /> */}
-      <IntervalCounter />
+      {/* <IntervalCounter /> */}
+      <DataFetching />
     </div>
   );
 }
