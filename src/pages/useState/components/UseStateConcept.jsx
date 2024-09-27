@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { PrevStateHooks } from "..";
+import { PrevStateHooks, UseStateArrays, UseStateObject } from "..";
 
 export function UseStateConcept() {
   const [count, setCount] = useState(0);
@@ -12,6 +12,8 @@ export function UseStateConcept() {
     <div>
       <button onClick={() => setCount(count + 1)}>count {count}</button>
       <PrevStateHooks />
+      <UseStateObject />
+      <UseStateArrays />
     </div>
   );
 }
