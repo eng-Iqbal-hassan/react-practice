@@ -8,6 +8,7 @@ import { Unauthorized } from "@pages/unauthorized";
 import { ROUTES, PrivateRoute } from "@routes";
 import { GetRequest } from "@pages/getRequest";
 import { PostRequest } from "@pages/postRequest";
+import { UseStateConcept } from "@pages/useState";
 
 // eslint-disable-next-line no-unused-vars
 const createPrivateRoute = (Component) => {
@@ -26,6 +27,7 @@ export const router = createBrowserRouter(
       <Route path={ROUTES.UN_AUTHORIZED} element={<Unauthorized />} />
       <Route path={ROUTES.GET_REQUEST} element={<GetRequest />} />
       <Route path={ROUTES.POST_REQUEST} element={<PostRequest />} />
+      <Route path={ROUTES.USE_STATE} element={<UseStateConcept />} />
     </>
   ),
   { basename: "/app" }
