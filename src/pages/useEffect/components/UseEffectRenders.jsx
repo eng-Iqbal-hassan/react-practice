@@ -24,7 +24,7 @@ export function UseEffectRenders() {
     // conditionally runs the useEffect:
     // it is observed that when we write the input text the useEffect continue to be executed,
     // we need to avoid it. For it, we pass the second parameter which will tells that when this thing is changed then execute the useEffect.
-    // in our case the parameter is counter so when it is passed, then useEffect is  run conditionally
+    // in our case the parameter is counter so when it is passed, then useEffect is run conditionally
     // second parameter is the array of values which tells that if these values do not change then useEffect does not run. these value can be one or more
   );
 }

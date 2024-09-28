@@ -1,0 +1,10 @@
+import React from "react";
+import { ComponentF } from "..";
+
+export function ComponentE() {
+  return (
+    <div>
+      <ComponentF />
+    </div>
+  );
+}
