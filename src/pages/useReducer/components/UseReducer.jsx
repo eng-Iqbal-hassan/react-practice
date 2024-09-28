@@ -1,11 +1,17 @@
-import { UseReducerMultiple, UseReducerObject, UseReducerString } from "..";
+import {
+  UseReducerMultiple,
+  UseReducerObject,
+  UseReducerString,
+  UseReducerUseContext,
+} from "..";
 
 export function UseReducer() {
   return (
     <div>
       {/* <UseReducerString /> */}
       {/* <UseReducerObject /> */}
-      <UseReducerMultiple />
+      {/* <UseReducerMultiple /> */}
+      <UseReducerUseContext />
     </div>
   );
 }
