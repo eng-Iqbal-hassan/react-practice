@@ -42,7 +42,7 @@ const reducer = (state, action) => {
 // the jsx is added for second counter and rendered correctly
 // by using state as an object we can keep the track of multiple states
 
-// this thing of keeping multiple state in single variable is suitable for global scope. Here, in this local scope there is another way to perform it.
+// this thing of keeping multiple state in single variable is suitable for global scope. Here, in this local scope there is another way to perform it which is using multiple useReducer.
 
 export function UseReducerObject() {
   const [count, dispatch] = useReducer(reducer, initialValue);
