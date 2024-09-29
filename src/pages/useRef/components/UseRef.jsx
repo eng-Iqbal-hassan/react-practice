@@ -1,10 +1,11 @@
 import React from "react";
-import { FocusInput } from "..";
+import { FocusInput, Timer } from "..";
 
 export function UseRef() {
   return (
     <div>
-      <FocusInput />
+      {/* <FocusInput /> */}
+      <Timer />
     </div>
   );
 }
