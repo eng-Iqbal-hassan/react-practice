@@ -1,5 +1,10 @@
 import React from "react";
+import { ParentComponent } from "..";
 
 export function UseCallBack() {
-  return <div>this is use call back page</div>;
+  return (
+    <div>
+      <ParentComponent />
+    </div>
+  );
 }
