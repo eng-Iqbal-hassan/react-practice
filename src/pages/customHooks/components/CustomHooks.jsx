@@ -1,11 +1,13 @@
 import React from "react";
-import { DocTitleOne, DocTitleTwo } from "..";
+import { CounterOne, CounterTwo, DocTitleOne, DocTitleTwo } from "..";
 
 export function CustomHooks() {
   return (
     <div>
-      <DocTitleOne />
-      <DocTitleTwo />
+      {/* <DocTitleOne />
+      <DocTitleTwo /> */}
+      <CounterOne />
+      <CounterTwo />
     </div>
   );
 }
