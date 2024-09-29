@@ -1,5 +1,10 @@
 import React from "react";
+import { FocusInput } from "..";
 
 export function UseRef() {
-  return <div>this is useRef page</div>;
+  return (
+    <div>
+      <FocusInput />
+    </div>
+  );
 }
