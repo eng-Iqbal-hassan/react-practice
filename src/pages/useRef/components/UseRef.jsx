@@ -4,8 +4,8 @@ import { FocusInput, Timer } from "..";
 export function UseRef() {
   return (
     <div>
-      {/* <FocusInput /> */}
-      <Timer />
+      <FocusInput />
+      {/* <Timer /> */}
     </div>
   );
 }

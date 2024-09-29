@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 
 export function FocusInput() {
-  const inputRef = useRef();
+  const inputRef = useRef(null);
   useEffect(() => {
     // focus the  input in it and as we have created componentDidMount this time
     inputRef.current.focus();
