@@ -1,5 +1,21 @@
-import React from "react";
+import {
+  DataFetchingOne,
+  DataFetchingTwo,
+  UseReducerMultiple,
+  UseReducerObject,
+  UseReducerString,
+  UseReducerUseContext,
+} from "..";
 
 export function UseReducer() {
-  return <div>this is use reducer page</div>;
+  return (
+    <div>
+      {/* <UseReducerString /> */}
+      {/* <UseReducerObject /> */}
+      {/* <UseReducerMultiple /> */}
+      {/* <UseReducerUseContext /> */}
+      {/* <DataFetchingOne /> */}
+      <DataFetchingTwo />
+    </div>
+  );
 }
