@@ -10,3 +10,4 @@ export { ComponentD } from "./components/ComponentD";
 export { ComponentE } from "./components/ComponentE";
 export { ComponentF } from "./components/ComponentF";
 export { DataFetchingOne } from "./components/DataFetchingOne";
+export { DataFetchingTwo } from "./components/DataFetchingTwo";

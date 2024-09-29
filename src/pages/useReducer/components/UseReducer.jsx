@@ -1,5 +1,6 @@
 import {
   DataFetchingOne,
+  DataFetchingTwo,
   UseReducerMultiple,
   UseReducerObject,
   UseReducerString,
@@ -13,7 +14,8 @@ export function UseReducer() {
       {/* <UseReducerObject /> */}
       {/* <UseReducerMultiple /> */}
       {/* <UseReducerUseContext /> */}
-      <DataFetchingOne />
+      {/* <DataFetchingOne /> */}
+      <DataFetchingTwo />
     </div>
   );
 }
